@@ -1,0 +1,324 @@
+<html>
+    <head>
+
+        <title>Home</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="Style/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    </head>
+
+    <div id="menu"></div>
+
+    <body id="title">
+        <div class="hei">
+        <div class="container" id="beercenter">
+            <div class="text2">click</div>
+            <div class="text2">▼</div>
+            <div class="beershake"><a href="#p1"><img src="image/Beer.png" class="beer" id="beershow"></a></div>
+        </div>
+        </div>
+        
+         <div class="bg" id="p1">
+             <div class="bgbb"></div>
+                <div class="hiddenlg"></div>
+                <div class="textm"> อยากรู้มั้ยว่าคนเป็นนักดื่มสายอะไร<br>ลองตอบคำถามต่อไปนี้ดูสิ</div>
+                <div class="facebook"></div>
+             <div class="bn">
+               <div class="move">
+                   <a href="#menu"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p4"><img src="image/Arrow.png" class="ard" id="to4"></a>
+               </div>
+            </div>
+             <div class="hiding"></div>
+         </div>
+        <div class="bg" id="p4">
+             <div class="hidden"></div>
+              <div class="text">ออกไปดื่มกี่ครั้งต่ออาทิตย์</div>
+                <div class="hidden"></div>
+                <div>
+                    <div class="box" id="input_div">
+                        <div class="row">
+                        <input type="button" value="-" id="moins" style="">
+
+                        <div class="calender">
+
+                            <div class="red">
+                                <p class="textday">DAY</p>
+                            </div>
+
+                        <!-- <input type="text" size="20" value="1" id="count"> -->
+                        <!-- <input type="number" step="10" min="0" max="100" id="count"> -->
+                        <input type="number" value="1" step="1" min="1" max="7" id="count">
+
+                        </div>
+
+
+                        <input type="button" value="+" id="plus">
+                        </div>
+                    </div>
+                </div>
+            <div class="bn">
+               <div class="move">
+                   <a href="#p1"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p5"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+         </div>
+
+        <div class="bg" id="p5">
+             <div class="hidden"></div>
+              <div class="text">ชอบดื่มนอกบ้านหรือในบ้าน</div>
+             <div class="hidden"></div>
+            <div class="boxp5">
+                <img src="image/p5/in.png" id="hide" onclick="housein()">
+                <img src="image/p5/out.png" id="show" onclick="carout()">
+            </div>
+            <div class="bn">
+               <div class="move">
+                   <a href="#p4"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p6"><img src="image/Arrow.png" class="ard" id="noskip"></a>
+                  <a href="#p8"><img src="image/Arrow.png" class="ard" id="skip"></a>
+               </div>
+            </div>
+            </div>
+
+
+         <div class="bg" id="p6">
+             <div class="hidden"></div>
+              <div class="text">ไปด้วยวิธีไหน</div>
+             <div class="hidden2"></div>
+             <div class="boxp6">
+               <img src="image/p6/01.svg" alt="" class="vehicle" id="v1" onclick="v01()">
+               <img src="image/p6/02.svg" alt="" class="vehicle" id="v2" onclick="v02()"><br>
+               <img src="image/p6/03.svg" alt="" class="vehicle" id="v3" onclick="v03()">
+               <img src="image/p6/04.svg" alt="" class="vehicle" id="v4" onclick="v04()">
+             </div>
+             <div class="bn">
+               <div class="move">
+                   <a href="#p5"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p7"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="bg" id="p7">
+             <div class="hidden"></div>
+              <div class="text">ใช้เวลาเดินทางนานกี่นาที</div>
+             <div class="hidden"></div>
+               <div class="slidecontainer">
+                   <input type="range" min="1" max="6" value="1" class="slider" id="myRange2">
+                   <p class="text"><span id="demo2"> </span>นาที</p>
+               </div>
+               <div class="bn">
+               <div class="move">
+                   <a href="#p6"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p8"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+         </div>
+
+        <div class="bg" id="p8">
+            <div class="hidden"></div>
+            <div class="text">ดื่นแอลกอฮอล์ประเภทไหนเป็นประจำ</div>
+            <div class="hidden"></div>
+                <div class="boxp8">
+                <img src="image/p8/img1.svg" class="img1" id="01" onclick="myFunction1()">
+                <img src="image/p8/img2.svg" class="img2" id="02" onclick="myFunction2()">
+                <img src="image/p8/img3.svg" class="img3" id="03" onclick="myFunction3()">
+                <img src="image/p8/img4.svg" class="img4" id="04" onclick="myFunction4()">
+                </div>
+                <div class="bn">
+                   <div class="move">
+                       <a href="#p7"><img src="image/Arrow.png" class="aru"></a>
+                       <div class="bt"></div>
+                      <a href="#p9"><img src="image/Arrow.png" class="ard"></a>
+                   </div>
+                </div>
+            </div>
+
+        <div class="bg" id="p9">
+             <div class="hidden"></div>
+              <div class="text">แก้วแบบไหนที่คุณใช้คู่กับเครื่องดื่ม</div>
+             <div class="hidden"></div>
+            <div class="box2">
+                <div id="beerimg">
+                    <img src="image/p9/beer/1.svg" class="beerp9" id="beer1p2" onclick="b1p2()">
+                    <img src="image/p9/beer/2.svg" class="beerp9" id="beer2p2" onclick="b2p2()">
+                    <img src="image/p9/beer/3.svg" class="beerp9" id="beer3p2" onclick="b3p2()">
+                    <img src="image/p9/beer/4.svg" class="beerp9" id="beer4p2" onclick="b4p2()">
+                </div>
+
+                <div id="wineimg">
+                    <img src="image/p9/wine/1.svg" class="beerp9" id="wine1p2" onclick="w1p2()">
+                    <img src="image/p9/wine/2.svg" class="beerp9" id="wine2p2" onclick="w2p2()">
+                    <img src="image/p9/wine/3.svg" class="beerp9" id="wine3p2" onclick="w3p2()">
+                    <img src="image/p9/wine/4.svg" class="beerp9" id="wine4p2" onclick="w4p2()">
+                </div>
+
+                <div id="whiskyimg">
+                    <img src="image/p9/whisky/1.svg" class="beerp9" id="whisky1p2" onclick="wh1p2()">
+                    <img src="image/p9/whisky/2.svg" class="beerp9" id="whisky2p2" onclick="wh2p2()">
+                    <img src="image/p9/whisky/3.svg" class="beerp9" id="whisky3p2" onclick="wh3p2()">
+                    <img src="image/p9/whisky/4.svg" class="beerp9" id="whisky4p2" onclick="wh4p2()">
+                </div>
+
+                <div id="cocktailimg">
+                    <img src="image/p9/cocktail/1.svg" class="beerp9" id="cocktail1p2" onclick="c1p2()">
+                    <img src="image/p9/cocktail/2.svg" class="beerp9" id="cocktail2p2" onclick="c2p2()">
+                    <img src="image/p9/cocktail/3.svg" class="beerp9" id="cocktail3p2" onclick="c3p2()">
+                    <img src="image/p9/cocktail/4.svg" class="beerp9" id="cocktail4p2" onclick="c4p2()">
+                </div>
+            </div>
+
+             <div class="bn">
+                   <div class="move">
+                       <a href="#p8"><img src="image/Arrow.png" class="aru"></a>
+                       <div class="bt"></div>
+                      <a href="#p10"><img src="image/Arrow.png" class="ard"></a>
+                   </div>
+                </div>
+         </div>
+
+        <div class="bg" id="p10">
+            <div class="hidden"></div>
+            <div class="text">ปริมาณแก้วที่ดื่มต่อครั้ง</div>
+            <div class="hidden"></div>
+            <div class="box"></div>
+            <div class="circle">
+                <img id="quantity">
+            </div>
+            <br>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="7" value="1" class="slider" id="myRange1" onchange="blurImg(event)">
+                    <p class="text"><span id="demo1"></span>แก้ว</p>
+                </div>
+
+            <div class="bn">
+               <div class="move">
+                   <a href="#p9"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p11"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+        </div>
+
+         <div class="bg" id="p11">
+            <div class="hidden"></div>
+            <div class="text">คุณเคยดื่มเกินงบที่ตัวเองคิดไว้แต่แรกมั้ย</div>
+            <div class="hidden"></div>
+             <div class="ans">
+                <div class="row">
+                    <div id="smb" class="text" onclick="effectState3(2)">เคย</div>
+                    <div class="btsmb"></div>
+                    <div id="smb" class="text" onclick="effectState3(3)">ไม่เคย</div>
+                </div>
+            </div>
+            <div class="bn">
+               <div class="move">
+                   <a href="#p10"><img src="image/Arrow.png" class="aru"></a>
+                   <div class="bt"></div>
+                  <a href="#p12"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+        </div>
+
+        <div class="bg" id="p12">
+           <div class="hidden"></div>
+           <div class="text">อาการหลังดื่มแอลกอฮอล์</div>
+           <div class="hidden"></div>
+            <div class="boxp12">
+                <img src="image/p12/img1.svg" id="effectImg">
+            </div>
+            <div class="ans">
+                <div class="row">
+                    <div id="smb" class="text" onclick="effectState(2)">มีแรง</div>
+                    <div class="btsmb"></div>
+                    <div id="smb" class="text" onclick="effectState(3)">อ่อนล้า</div>
+                </div>
+            </div>
+            <div class="bn">
+               <div class="move">
+                <a href="#p11"><img src="image/Arrow.png" class="aru"></a>
+                <div class="bt"></div>
+                <a href="#p13"><img src="image/Arrow.png" class="ard"></a>
+               </div>
+            </div>
+       </div>
+
+       <div class="bg" id="p13">
+          <div class="hidden"></div>
+          <div class="text">เคยเกิดอาการปวดท้องหลังดื่มแอลกอฮอล์์</div>
+          <div class="hidden"></div>
+           <div class="boxp12">
+               <img src="image/p13/img1.svg" id="effectImg2">
+           </div>
+           <div class="ans">
+               <div class="row">
+                   <div id="smb" class="text" onclick="effectState2(2)">มี</div>
+                   <div class="btsmb"></div>
+                   <div id="smb" class="text" onclick="effectState2(3)">ไม่มี</div>
+               </div>
+           </div>
+         <div class="bn">
+            <div class="move">
+               <a href="#p12"><img src="image/Arrow.png" class="aru"></a>
+               <div class="bt"></div>
+              <a href="#final"><img src="image/Arrow.png" class="ard" onclick="finalre()"></a>
+           </div>
+        </div>
+      </div>
+
+    <div class="bg" id="final">
+        <div class="post" >
+
+            <div class="imginside"><img id="resultimg"></div>
+
+            <p class="textre"><span id="result"></span></p>
+
+        </div>
+    </div>
+
+     <div class="bg" id="detail">
+        <p class="text"> มีปริมาณแอลกอฮอล์เทียบเท่ากับเลือด<span id="sly">...</span>ลิตร</p>
+        <p class="text">จะได้รับ<span id="cal">...</span> cal.</p>
+        <p class="text"><span id="vre">...</span></p>
+    </div>
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js">
+        </script>
+        <script src="Javascript/main.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="Javascript/scroll.js"></script>
+        <script src="Javascript/buttonclick.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Javascript/hide_and_show.js"></script>
+        <script src="Javascript/clicktoshow.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="Javascript/range%20slider%20bar1.js"></script>
+        <script src="Javascript/result.js"></script>
+
+
+    </body>
+</html>
