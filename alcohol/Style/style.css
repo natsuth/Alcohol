@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'cloudbold';
+    src: url('cloud-bold-webfont.eot');
+    src: url('cloud-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cloud-bold-webfont.woff2') format('woff2'),
+         url('cloud-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cloud_lightlight';
+    src: url('cloud-light-webfont.eot');
+    src: url('cloud-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cloud-light-webfont.woff2') format('woff2'),
+         url('cloud-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#menu{
+    height: 230px;
+}
+.hidden{
+    height:100px;
+}
+.hidden2{
+    height:60px;
+}
+.hiddenlg{
+    height:200px;
+}
+.hiddenre{
+    height:20px;
+}
+body{
+    background: linear-gradient(#F4900C,#FFCC41);
+    height: 667px;
+    background-repeat: no-repeat;
+
+}
+.container{
+    position: relative;
+}
+.hei{
+    height: 437px;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-family: 'cloud_lightlight';
+    font-size: 22px
+}
+.textm{
+    text-align: center;
+    color: white;
+    font-family: 'cloud_lightlight';
+    font-size: 22px
+}
+.text2{
+    text-align: center;
+    color: white;
+}
+.beer{
+    margin-top: 20;
+    width: 80px;
+    height: auto;
+    margin-left: -7px 
+}
+#beercenter{
+    margin: auto;
+    width: 81px;
+    margin-top: 0px;
+}
+.tb{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 100;
+}
+.line{
+    background-color: white;
+    width: 50px;
+    height: 1px;
+}
+.bn{
+  width: 115px;
+  margin: auto;
+}
+.move{
+    background-color: white;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    top: 590px;
+    border-radius: 10px;
+}
+.bt{
+    position: absolute;
+    background-color:#ffcc4d;
+    height: 30px;
+    width: 3px;
+    top: 13%;
+    left: 48%
+}
+.aru{
+    width: 20px;
+    position: absolute;
+    top: 25%;
+    Left: 15%;
+}
+.ard{
+    width: 20px;
+    position: absolute;
+    top: 25%;
+    Left: 65%;
+    transform: rotate(0.5turn);
+}
+.bg{
+    background-color: #ffcc4d;
+    position:relative;
+    height: 667px;
+    width: 100%;
+}
+.bgbb{
+    background-image: url(img/bubble.svg);
+    background-repeat: no-repeat;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+}
+.bb{
+
+    max-width: 100%;
+
+}
+.boxp5{
+    width: 300px;
+    margin:auto
+}
+.hiding{
+    height: 240px;
+}
+#hide{
+  width: 100px;
+  vertical-align: bottom;
+}
+#show{
+    width: 100px;
+    margin-left: 95px;
+    vertical-align: bottom;
+}
+.boxp6{
+    width: 330px;
+    margin: auto;
+}
+.vehicle{
+    margin: 40px;
+    vertical-align: bottom;
+}
+#v1{
+    width:90px;
+}
+#v2{
+    width:35px;
+}
+#v3{
+    width:80px;
+}
+#v4{
+    width:60px;
+}
+.box{
+    top: 210px;
+    width: 210px;
+    text-align: center;
+    margin: auto
+}
+@media (max-width:375px){
+    #count{
+      width: 1ch;
+    }
+    .textm{
+    text-align: center;
+    color: white;
+    font-family: 'cloud_lightlight';
+    font-size: 22px
+    }
+}
+@media (min-width:376px){
+    #count{
+      width: 44px;
+      margin-left: 20px;
+    }
+
+}
+@media (max-width:767px) and (min-width:376px){
+    .textm{
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+    font-family: 'cloud_lightlight';
+    font-size: 22px
+    }
+    .bg{
+      height: 929px;
+    }
+    .hei{
+        height: 698px;
+    }
+}
+@media (min-width:768px){
+    .bg{
+        height: 929px;
+    }
+    .hei{
+        height: 698px;
+    }
+}
+@media (min-width:368px){
+    .textm{
+    margin-top: 140px;
+    text-align: center;
+    color: white;
+    font-family: 'cloud_lightlight';
+    font-size: 22px
+    }
+}
+.calender{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 14px;
+    margin: auto;
+}
+.red{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    background-color: #d96056;
+    border-radius: 14px 14px 0px 0px;
+}
+.textday{
+    text-align: center;
+    color: white;
+    font-family: Cloud-Bold;
+    font-size: 22px;
+    margin-top: 6px
+}
+#count{
+    text-align:center;
+    font-size: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 45px
+
+}
+#plus, #moins{
+    border: 3px;
+    background-color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+}
+.boxp8{
+   width: 310px;
+    margin: auto;
+}
+.img1{
+    width: 80px;
+    vertical-align: bottom;
+
+}
+.img2{
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 20px;
+
+}
+.img3{
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+.img4{
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+.box2{
+    width: 310px;
+    margin: auto;
+}
+#beerimg{
+    width: 100%;
+    background-image:url(s)
+}
+#beer1p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#beer2p2{
+    width: 45px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#beer3p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#beer4p2{
+    width: 70px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#wine1p2{
+    width: 46px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#wine2p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#wine3p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#wine4p2{
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#whisky1p2{
+    width: 60px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#whisky2p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#whisky3p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#whisky4p2{
+    width: 45px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#cocktail1p2{
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#cocktail2p2{
+    width: 60px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#cocktail3p2{
+    width: 30px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+#cocktail4p2{
+    width: 40px;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+.boxcc{
+    width: 145px;
+}
+.beer1_2{
+    width: 50px;
+    margin: auto;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: auto;
+    position: relative;
+}
+
+#quantity{
+  width: auto;
+  max-height: 70%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 15px;
+    border-radius: 50px;
+    background:#ffcc4d;
+    border: 3px solid white;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: opacity 1s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 70%;
+    background: #f4900c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#f4900c;
+    cursor: pointer;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    text-align: center
+}
+.send{
+  margin-right: 4px;
+}
+.boxp11{
+    margin: auto;
+    width: 200px;
+}
+.boxp12{
+    margin: auto;
+    width: 100px;
+}
+#effectImg{
+    height: 160px;
+    width: 100px;
+}
+#effectImg3{
+    height: 170px;
+    width: 200px;
+}
+.ans{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+#smb{
+    width: 100px;
+    text-align: center;
+    margin-left: 7px;
+}
+.btsmb{
+    border: 0.5px solid white;
+    height: 28px;
+    margin-top: 3px;
+}
+.post{
+    background-image: url(img/psot.svg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+    margin: auto;
+}
+#resultimg{
+    width: 270;
+    margin-top: 100px;
+}
+.imginside{
+    width: 270;
+    margin: auto;
+}
+#result{
+    color: #67401A;
+    font-family:'cloudbold';
+    font-size: 19px;
+}
+.textre{
+    text-align: center;
+    width: 265px;
+    height: 130px;
+    margin: auto;
+    margin-top: 18px;
+}
