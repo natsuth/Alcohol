@@ -1,4 +1,4 @@
-$(document).ready(function(){
+//$(document).ready(function(){
     $("#p1").hide();
     $("#p4").hide();
     $("#p5").hide();
@@ -10,8 +10,9 @@ $(document).ready(function(){
     $("#p11").hide();
     $("#p12").hide();
     $("#p13").hide();
+    $("#ready").hide();
     $("#final").hide();
-    $("#detail").hide(); 
+    $("#detail").hide();
     $("#to5").hide();
     $("#noskip").hide();
     $("#skip").hide();
@@ -22,7 +23,7 @@ $(document).ready(function(){
     $("#to11").hide();
     $("#to12").hide();
     $("#to13").hide();
-    $("#tofinal").hide();
+    $("#toready").hide();
 
   $("#beershow").click(function(){
         $("#p1").show();
@@ -31,15 +32,15 @@ $(document).ready(function(){
   $("#to4").click(function(){
         $("#p4").show();
     });
-    
+
    $("#moins").click(function(){
         $("#to5").show();
     });
-    
+
    $("#plus").click(function(){
         $("#to5").show();
     });
-    
+
     $("#to5").click(function(){
         $("#p5").show();
     });
@@ -47,6 +48,8 @@ $(document).ready(function(){
   $("#hide").click(function(){
         $("#skip").show();
         $("#noskip").hide();
+        $("#vresult").hide();
+        $("#infv").hide();
     });
     $("#skip").click(function(){
         $("#p8").show();
@@ -54,6 +57,8 @@ $(document).ready(function(){
   $("#show").click(function(){
         $("#noskip").show();
         $("#skip").hide();
+        $("#vresult").show();
+        $("#infv").show();
     });
     $("#noskip").click(function(){
         $("#p6").show();
@@ -124,29 +129,44 @@ $(document).ready(function(){
     });
   $("#p11yes").click(function(){
         $("#to12").show();
+        $("#inf1").show();
     });
   $("#p11no").click(function(){
         $("#to12").show();
+        $("#inf1").hide();
     });
   $("#to12").click(function(){
         $("#p12").show();
     });
   $("#p12yes").click(function(){
         $("#to13").show();
+        $("#inf2").hide();
     });
   $("#p12no").click(function(){
         $("#to13").show();
+        $("#inf2").show();
     });
   $("#to13").click(function(){
         $("#p13").show();
     });
   $("#p13yes").click(function(){
-        $("#tofinal").show();
+        $("#toready").show();
+        $("#inf3").show();
     });
   $("#p13no").click(function(){
-        $("#tofinal").show();
+        $("#toready").show();
+        $("#inf3").hide();
+    });
+  $("#toready").click(function(){
+        $("#ready").show();
     });
   $("#tofinal").click(function(){
         $("#final").show();
+    });
+   $("#readmore").click(function(){
+        $("#detail").show();
+    });
+    $("#tryagian").click(function(){
+        $("#detail").hide();
     });
 });

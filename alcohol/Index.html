@@ -13,21 +13,21 @@
 
     </head>
 
-    <div id="menu"></div>
-
     <body id="title">
+        <div class="textm">อยากรู้มั้ยว่านามนักดื่มของคุณคืออะไร</div>
         <div class="hei">
-        <div class="container" id="beercenter">
-            <div class="text2">click</div>
+            <div class="coverb"></div>
+            <div class="text2">click on beer</div>
             <div class="text2">▼</div>
+        <div class="container" id="beercenter">
             <div class="beershake"><a href="#p1"><img src="image/Beer.png" class="beer" id="beershow"></a></div>
         </div>
         </div>
-        
+
          <div class="bg" id="p1">
              <div class="bgbb"></div>
                 <div class="hiddenlg"></div>
-                <div class="textm"> อยากรู้มั้ยว่าคนเป็นนักดื่มสายอะไร<br>ลองตอบคำถามต่อไปนี้ดูสิ</div>
+                <div class="textm">พร้อมแล้ว ให้กดปุ่ม <b>ลูกศรชี้ลง</b> เพื่อไปหน้าถัดไป</div>
                 <div class="facebook"></div>
              <div class="bn">
                <div class="move">
@@ -41,6 +41,7 @@
         <div class="bg" id="p4">
              <div class="hidden"></div>
               <div class="text">ออกไปดื่มกี่ครั้งต่ออาทิตย์</div>
+            <div class="textsub">(กดปุ่ม บวก กับ ลบ เพื่อไปคำถามถัดไป)</div>
                 <div class="hidden"></div>
                 <div>
                     <div class="box" id="input_div">
@@ -55,7 +56,7 @@
 
                         <!-- <input type="text" size="20" value="1" id="count"> -->
                         <!-- <input type="number" step="10" min="0" max="100" id="count"> -->
-                        <input type="number" value="1" step="1" min="1" max="7" id="count">
+                        <input type="number" value="0" step="1" min="0" max="7" id="count">
 
                         </div>
 
@@ -76,6 +77,7 @@
         <div class="bg" id="p5">
              <div class="hidden"></div>
               <div class="text">ชอบดื่มนอกบ้านหรือในบ้าน</div>
+            <div class="textsub">(คลิกที่รูปเพื่อไปคำถามถัดไป)</div>
              <div class="hidden"></div>
             <div class="boxp5">
                 <img src="image/p5/in.png" id="hide" onclick="housein()">
@@ -95,6 +97,7 @@
          <div class="bg" id="p6">
              <div class="hidden"></div>
               <div class="text">ไปด้วยวิธีไหน</div>
+             <div class="textsub">(คลิกที่รูปเพื่อไปคำถามถัดไป)</div>
              <div class="hidden2"></div>
              <div class="boxp6">
                <img src="image/p6/01.svg" alt="" class="vehicle" id="v1" onclick="v01()">
@@ -114,8 +117,12 @@
          <div class="bg" id="p7">
              <div class="hidden"></div>
               <div class="text">ใช้เวลาเดินทางนานกี่นาที</div>
-             <img src="image/p7/in-01.png" id="timeimg">
-               <div class="slidecontainer">
+             <div class="textsub">(กดปุ่มสีส้มแล้ว กดอีกครั้งไ้เลื่อนเพื่อไปคำถามถัดไป)</div>
+                <div class="hidden2"></div>
+                <div class="boxp7">
+                <img src="image/p7/time1.png" id="timeimg">
+                </div><div class="hidden2"></div>
+             <div class="slidecontainer">
                    <input type="range" min="1" max="6" value="1" class="slider" id="myRange2">
                    <p class="text"><span id="demo2"> </span>นาที</p>
                </div>
@@ -131,6 +138,7 @@
         <div class="bg" id="p8">
             <div class="hidden"></div>
             <div class="text">ดื่นแอลกอฮอล์ประเภทไหนเป็นประจำ</div>
+            <div class="textsub">(คลิกที่รูปเพื่อไปคำถามถัดไป)</div>
             <div class="hidden"></div>
                 <div class="boxp8">
                 <img src="image/p8/img1.svg" class="img1" id="01" onclick="myFunction1()">
@@ -150,6 +158,7 @@
         <div class="bg" id="p9">
              <div class="hidden"></div>
               <div class="text">แก้วแบบไหนที่คุณใช้คู่กับเครื่องดื่ม</div>
+            <div class="textsub">(คลิกที่รูปเพื่อไปคำถามถัดไป)</div>
              <div class="hidden"></div>
             <div class="box2">
                 <div id="beerimg">
@@ -193,6 +202,7 @@
         <div class="bg" id="p10">
             <div class="hidden"></div>
             <div class="text">ปริมาณแก้วที่ดื่มต่อครั้ง</div>
+            <div class="textsub">(กดปุ่มสีส้มแล้ว กดอีกครั้งไ้เลื่อนเพื่อไปคำถามถัดไป)</div>
             <div class="hidden"></div>
             <div class="box"></div>
             <div class="circle">
@@ -216,6 +226,7 @@
          <div class="bg" id="p11">
             <div class="hidden"></div>
             <div class="text">คุณเคยดื่มเกินงบที่ตัวเองคิดไว้แต่แรกมั้ย</div>
+             <div class="textsub">(เลือกคำตอบในช่องสี่เหลียมเพื่อไปคำถามถัดไป)</div>
             <div class="hidden"></div>
              <div class="boxp11">
                 <img src="image/p11/img1.svg" id="effectImg3">
@@ -239,6 +250,7 @@
         <div class="bg" id="p12">
            <div class="hidden"></div>
            <div class="text">อาการหลังดื่มแอลกอฮอล์</div>
+            <div class="textsub">(เลือกคำตอบในช่องสี่เหลียมเพื่อไปคำถามถัดไป)</div>
            <div class="hidden"></div>
             <div class="boxp12">
                 <img src="image/p12/img1.svg" id="effectImg">
@@ -262,6 +274,7 @@
        <div class="bg" id="p13">
           <div class="hidden"></div>
           <div class="text">เคยเกิดอาการปวดท้องหลังดื่มแอลกอฮอล์์</div>
+           <div class="textsub">(เลือกคำตอบในช่องสี่เหลียมเพื่อไปคำถามถัดไป)</div>
           <div class="hidden"></div>
            <div class="boxp12">
                <img src="image/p13/img1.svg" id="effectImg2">
@@ -277,13 +290,23 @@
             <div class="move">
                <a href="#p12"><img src="image/Arrow.png" class="aru"></a>
                <div class="bt"></div>
-              <a href="#final"><img src="image/Arrow.png" class="ard" onclick="finalre()" id="tofinal"></a>
+              <a href="#ready"><img src="image/Arrow.png" class="ard" onclick="finalre()" id="toready"></a>
            </div>
         </div>
       </div>
 
+        <div class="bg" id="ready">
+        <div class="hiddenready"></div>
+        <div class="text">นามนักดื่มของคุณคือ</div>
+         <div class="bn">
+            <a href="#final" ><div class="moveready">
+                <p class="seemore" id="tofinal"><font color="#ffcc4d">กดดู</font></p>
+            </div></a>
+        </div>
+      </div>
     <div class="bg" id="final">
         <div class="hiddenre"></div>
+
         <div class="post">
 
             <div class="imginside"><img id="resultimg"></div>
@@ -291,19 +314,94 @@
             <p class="textre"><span id="result"></span></p>
 
         </div>
-        <p class="text">เราพอมีวิธีรับมือให้คุณอยู่<br>ถ้าอยากรู้ก็กดนี้เลย</p>
+        <br>
+        <p class="text">ระวังก่อนที่โรคร้ายจะมาจับตัวคุณไป</p>
         <div class="bn">
-            <a href=""><div class="move">
-                <div class="seemore">see more</div>
+            <a href="#detail"><div class="move" id="readmore">
+                <p class="seemore"><font color="#ffcc4d">อ่านเพิ่ม</font></p>
             </div></a>
         </div>
     </div>
 
-     <div class="bg" id="detail">
-        <p class="text"> มีปริมาณแอลกอฮอล์เทียบเท่ากับเลือด<span id="sly">...</span>ลิตร</p>
-        <p class="text">จะได้รับ<span id="cal">...</span> cal.</p>
-        <p class="text"><span id="vre">...</span></p>
+     <div class="bglast" id="detail">
+        <div class="hidden"></div>
+        <div class="dbox">
+            <div class="hiddenbox"></div>
+            <div class="textde">ในร่างกายของคุณ</div>
+            <br>
+            <p class="textde">คุณได้รับแอลกอฮอล์ <span id="sly">...</span>ลิตร<br>และมีไขมันในเลือด <span id="cal">...</span>cal.</p>
+            <p class="textde"> ซึ้งเลือดในร่างกายมี 5ลิตร<br> และควรดื่มให้ได้ไม่เกิน 500cal.</p>
+        </div>
+
+         <div class="hidden2"></div>
+         <div id="infv">
+         <div class="boxp7">
+            <img src="image/Result/car.svg" id="timeimg">
+        </div>
+
+         <div class="dbox2">
+            <div class="textde">ผลจากการเดินทางของคุณทำให้</div>
+         </div><br>
+         <p class="text" id="vresult"><span id="vre">...</span></p>
+
+         <div class="hidden2"></div>
+       </div>
+
+        <div class="infbox" id="inf1"><div class="dbox2">
+            <div class="textde">หากคุณต้องการที่ลดหรือหยุดดื่ม</div>
+        </div><br>
+         <p class="text">1. เตรียมเงินไปเท่าที่จะใช้<br>
+            2. เข้าช่วงที่ร้านจะปิดจะได้อยู่ไม่นาน<br>
+            3. ใช้เวลากับคนที่คุณรักให้นานขึ้น<br>
+            4. หาความสุขใหม่ให้ตัวเอง<br>
+             <b>คุณทำได้! เราและคนที่คุณรักเชื่อในตัวคุณ</b></p>
+         <div class="hidden2"></div></div>
+
+        <div class="infbox"  id="inf2"><div class="dbox2">
+            <div class="textde">อาการอ่อนล่าหลังดื่ม</div>
+        </div><br>
+         <p class="text">คุณเสี่ยงอาจจะมีปัญหาเหล่านี้ในตัว<br>
+            1. ความจำเสื่อม<br>
+            2. เริ่มเสียการทรงตัว<br>
+            3. ขนาดสมองกำลังเล็กลง<br>
+            4. เกิดอาการคิดระแวงในบางที<br>
+             <b>รีบหยุดดื่มก่อนที่จะสายเกินไป</b></p>
+         <div class="hidden2"></div></div>
+
+         <div class="infbox" id="inf3"><div class="dbox2">
+            <div class="textde">อาการปวดท้องหลังดื่ม</div>
+        </div><br>
+         <p class="text">1. กระเพาะอาหารอักเสบ<br>
+            2. นํ้าย่อยในกระเพาะออกมามากทำให้ตับอ่อนอักเสบ<br>
+            3. เสี่ยงป็นโรคตับแข็ง<br>
+            4. มีอาการอาเจียนเป็นเลือดและเป็นมะเร็งตับ</p>
+        </div>
+         
+         <div class="hidden2"></div>
+         <div class="note">
+            <div class="yellow">
+                <p class="textn">Reference</p>    
+            </div>
+            <div class="list">
+                <div class="hiddenn"></div>
+                <a href="https://www.honestdocs.co/alcohol-effects"><p class="textl">- Honestdocs</p></a>
+                <a href="https://www.siamhealth.net/public_html/Health/good_health_living/alcohol/alcohol_bad.html "><p class="textl">- Siamhealth</p></a>
+                    <a href="http://www.bartendercocktail.net/362636343619363236093656363436193641365736483585363736183623358536333610-bartender.html"><p class="textl">- Bartendercocktail</p></a>
+                <a href="https://health.kapook.com/view125448.html"><p class="textl">- Kapook</p></a>
+                    <a href="https://dracomaculatus.blogspot.com/2015/12/blog-post_22.html "><p class="textl">- Dracomaculator</p></a>
+                    <a href="https://www.bloggang.com/mainblog.php?id=rumpuey&month=24-06-2005&group=13&gblog=8"><p class="textl">- Blogging</p></a>
+                    <a href="https://www.drinkaware.co.uk/understand-your-drinking/unit-calculator "><p class="textl">- Drinkaware</p></a>
+            </div> 
+        </div>
+         
+        <div class="bn">
+            <a href="Index.html"><div class="move2">
+                <p class="tryagain"><font color="#ffcc4d">ลองอีกครั้ง</font></p>
+            </div></a>
+        </div>
+         <div class="hidden2"></div>
     </div>
+
 
 
 
